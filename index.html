@@ -9,17 +9,17 @@
     </head>
     <body>
 
-        <script src="HttpRequest.js"></script>
+        <script src="PVX.js"></script>
         <script>
             
 
             // Create new HttpRequest object
-            var http = new HttpRequest();
+            var pvx = new PVX();
             
             
             
             // Make a GET request
-            http.get("server/testGet.php")
+            pvx.get("server/testGet.php")
             .then(function (response) {
                 // Returns a JS object if the server responded with a valid JSON string
                 // Or just a string if otherwise
@@ -33,7 +33,7 @@
             
             // Make a POST request
             var postData = { firstName: "Andre", lastName: "Silva" };
-            http.post("server/testPost.php", postData)
+            pvx.post("server/testPost.php", postData)
             .then(function (response) {
                 // Returns a JS object if the server responded with a valid JSON string
                 // Or just a string if otherwise
@@ -43,7 +43,7 @@
                 console.error("HTTP Error: ", error);
             });
 
-            
+
         </script>
     </body>
 </html>

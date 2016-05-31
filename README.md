@@ -1,6 +1,10 @@
-# Vanilla Promises
+# Promise Vanilla XHR (PVX.js)
 
-Simple JavaScript method to make XHR requests (GET and POST) and return promises using vanilla JS.
+JavaScript helper method to make XHR calls (GET and POST) and return promises, all using vanilla JavaScript.
+
+Response is parsed into a JS object is a valid JSON string is returned by the server.
+
+[See Promises support](http://caniuse.com/#feat=promises)
 
 #### Sample GET request:
 

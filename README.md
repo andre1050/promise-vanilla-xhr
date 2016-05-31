@@ -2,7 +2,7 @@
 
 JavaScript helper method to make XHR calls (GET and POST) and return promises, all using vanilla JavaScript.
 
-Response is parsed into a JS object is a valid JSON string is returned by the server.
+Response is parsed into a JS object if the server returns a valid JSON string.
 
 [Check native support for Promises](http://caniuse.com/#feat=promises)
 

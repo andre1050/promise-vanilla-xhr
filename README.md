@@ -9,9 +9,9 @@ Response is parsed into a JS object if the server returns a valid JSON string.
 #### Sample GET request:
 
 ```
-var http = new HttpRequest();
+var pvx = new PVX();
 
-http.get("server/testGet.php")
+pvx.get("server/testGet.php")
 .then(function (response) {
     console.log(response);
 })
@@ -23,10 +23,10 @@ http.get("server/testGet.php")
 #### Sample POST request:
 
 ```
-var http = new HttpRequest();
+var pvx = new PVX();
 var postData = { firstName: "Andre", lastName: "Silva" };
 
-http.post("server/testPost.php", postData)
+pvx.post("server/testPost.php", postData)
 .then(function (response) {
     console.log(response);
 })

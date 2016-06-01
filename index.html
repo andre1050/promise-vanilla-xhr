@@ -32,8 +32,9 @@
             
             
             // Make a POST request
-            var postData = { firstName: "Andre", lastName: "Silva" };
-            pvx.post("server/testPost.php", postData)
+            var data = { firstName: "Andre", lastName: "Silva" };
+            
+            pvx.post("server/testPost.php", data)
             .then(function (response) {
                 // Returns a JS object if the server responded with a valid JSON string
                 // Or just a string if otherwise
